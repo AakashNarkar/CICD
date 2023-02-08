@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import CICD
+import CICD
 
 final class CICDTests: XCTestCase {
 
@@ -16,8 +16,8 @@ final class CICDTests: XCTestCase {
     }
     
     func testFail() {
-        var a = 10
-        XCTAssertNotNil(a)
+        var n = 10
+        XCTAssertNotNil(n)
     }
 
 }
