@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import CICD
+import CICD
 
 final class CICDTests: XCTestCase {
 
