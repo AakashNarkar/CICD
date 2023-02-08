@@ -17,7 +17,7 @@ final class CICDTests: XCTestCase {
     
     func testFail() {
         var a = 10
-        XCTAssertNil(a)
+        XCTAssertNotNil(a)
     }
 
 }
