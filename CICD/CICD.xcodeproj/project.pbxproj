@@ -17,6 +17,8 @@
 		92985F0229925D26009D6A6E /* CICDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92985F0129925D26009D6A6E /* CICDTests.swift */; };
 		92985F0C29925D26009D6A6E /* CICDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92985F0B29925D26009D6A6E /* CICDUITests.swift */; };
 		92985F0E29925D26009D6A6E /* CICDUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92985F0D29925D26009D6A6E /* CICDUITestsLaunchTests.swift */; };
+		92C549532994FA0E0049B504 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C549522994FA0E0049B504 /* ViewModel.swift */; };
+		92C549542994FA1A0049B504 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C549522994FA0E0049B504 /* ViewModel.swift */; };
 		9B3392FE93E6D2C7188CD8B8 /* Pods_CICD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA540C5C1F6D75FC21AE8778 /* Pods_CICD.framework */; };
 		E300A04CF3AFDD95DD83A305 /* Pods_CICD_CICDUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 715B790948BCD7B42EC78457 /* Pods_CICD_CICDUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,7 @@
 		92985F0729925D26009D6A6E /* CICDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CICDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92985F0B29925D26009D6A6E /* CICDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICDUITests.swift; sourceTree = "<group>"; };
 		92985F0D29925D26009D6A6E /* CICDUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICDUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92C549522994FA0E0049B504 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		B07C100F83597DC80DD52595 /* Pods_CICDTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CICDTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D442219E7DDEB03AD47079EA /* Pods-CICDTests.dev debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CICDTests.dev debug.xcconfig"; path = "Target Support Files/Pods-CICDTests/Pods-CICDTests.dev debug.xcconfig"; sourceTree = "<group>"; };
 		DA540C5C1F6D75FC21AE8778 /* Pods_CICD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CICD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +126,6 @@
 				2C5F8DBCA63318A06FF5199E /* Pods-CICDTests.release.xcconfig */,
 				6D09121908F8BA915797D511 /* Pods-CICDTests.dev release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,6 +161,7 @@
 				92985EF329925D26009D6A6E /* Assets.xcassets */,
 				92985EF529925D26009D6A6E /* LaunchScreen.storyboard */,
 				92985EF829925D26009D6A6E /* Info.plist */,
+				92C549522994FA0E0049B504 /* ViewModel.swift */,
 			);
 			path = CICD;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 			files = (
 				92985EEF29925D23009D6A6E /* ViewController.swift in Sources */,
 				92985EEB29925D23009D6A6E /* AppDelegate.swift in Sources */,
+				92C549532994FA0E0049B504 /* ViewModel.swift in Sources */,
 				92985EED29925D23009D6A6E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C549542994FA1A0049B504 /* ViewModel.swift in Sources */,
 				92985F0229925D26009D6A6E /* CICDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -545,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -570,6 +575,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,6 +604,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -737,7 +744,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -762,6 +769,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -857,7 +865,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -882,6 +890,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
