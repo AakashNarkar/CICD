@@ -14,5 +14,9 @@ class ViewController: UIViewController {
         
         
     }
+    
+    @IBAction func pressMeButtonAction(_ sender: UIButton) {
+        print("Do Something")
+    }
 }
 

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,12 +24,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDR-au-kSF">
+                                <rect key="frame" x="96.666666666666686" y="456.66666666666669" width="200" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="PD7-W5-v8q"/>
+                                    <constraint firstAttribute="height" constant="50" id="zZR-7W-IIP"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Press Me"/>
+                                <connections>
+                                    <action selector="pressMeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1z-Ee-ksK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="fNR-r2-S6N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="G9j-GV-fUN"/>
+                            <constraint firstItem="cDR-au-kSF" firstAttribute="top" secondItem="fNR-r2-S6N" secondAttribute="bottom" constant="20" id="a4e-yW-jc1"/>
                             <constraint firstItem="fNR-r2-S6N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nCX-9o-3nG"/>
+                            <constraint firstItem="cDR-au-kSF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sVK-QW-T3w"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -38,6 +54,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
